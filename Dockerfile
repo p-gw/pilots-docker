@@ -10,7 +10,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libssh2-1-dev \
   libssl-dev  \
   libcurl4-openssl-dev \
-  unixodbc-dev \
+  unixodbc-dev
 
 # developer tools
 RUN install2.r --error \
@@ -20,7 +20,7 @@ RUN install2.r --error \
   vdiffr \
   pkgdown \
   covr \
-  lintr \
+  lintr
 
 # package dependencies
 RUN install2.R --error \
@@ -29,4 +29,4 @@ RUN install2.R --error \
   ggplot2 \
   rstan \
   rstantools \
-  rmarkdown \
+  rmarkdown
