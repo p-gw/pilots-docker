@@ -23,7 +23,7 @@ RUN install2.r --error \
   lintr
 
 # package dependencies
-RUN install2.R --error \
+RUN install2.r --error \
   --deps TRUE \
   data.table \
   ggplot2 \
