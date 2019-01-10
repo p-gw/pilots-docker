@@ -1,4 +1,4 @@
-FROM rocker/r-base:latest
+FROM rocker/tidyverse:latest
 
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libxml2-dev \
@@ -15,7 +15,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
 # developer tools
 RUN install2.r --error \
   --deps TRUE \
-  devtools \
   testthat \
   vdiffr \
   pkgdown \
@@ -26,7 +25,6 @@ RUN install2.r --error \
 RUN install2.r --error \
   --deps TRUE \
   data.table \
-  ggplot2 \
   rstan \
   rstantools \
   rmarkdown
