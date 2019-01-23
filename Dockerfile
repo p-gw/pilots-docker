@@ -11,8 +11,6 @@ RUN install2.r --error \
 
 # package dependencies
 RUN install2.r --error \
-  --deps TRUE \
   data.table \
   rstan \
-  rstantools \
-  rmarkdown
+  rstantools
